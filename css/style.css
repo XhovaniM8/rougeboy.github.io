@@ -26,6 +26,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  top: 10vh;
+  bottom: 10vh;
+  overflow: hidden;
 }
 
 /* ---------------- Header ----------------  */
@@ -67,6 +70,7 @@ header {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 3px;
   text-decoration: none;
+
 }
 
 .nav_link:link,
