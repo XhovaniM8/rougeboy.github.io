@@ -120,7 +120,7 @@ header {
   text-decoration: none;
 }
 
-.content_container {
+.content_container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +128,17 @@ header {
 
   height: 100vh;
   width: 100%;
+}
+
+.portrait_image_container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.portrait_image{
+  border-radius: 50%;
+  width: 500px;
 }
 
 .homepage_name_container, .homepage_subtitle_container, .homepage_img_container {
