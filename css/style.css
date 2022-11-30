@@ -21,6 +21,14 @@ body {
   background-color: white;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
 /* ----------------------------------------------  */
 /* ---------------- Header Page -----------------  */
 /* ----------------------------------------------  */
@@ -208,11 +216,31 @@ footer {
 /* ---------------- Photography Page ------------  */
 /* ----------------------------------------------  */
 
+.photo_container {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.photo_container_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo_container_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  padding: 20px;
+}
 
 /* ----------------------------------------------  */
 /* ---------------- Rouge Boy Page --------------  */
 /* ----------------------------------------------  */
- 
+
+
 .rougeboy_content_container {
   display: flex;
   flex-direction: column;
