@@ -6,6 +6,65 @@
 * Misc
 ----------------------------------------------  */
 
+
+/* code that is here will apply to any screen size */ 
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
 html {
   height: 100%;
 }
@@ -63,7 +122,7 @@ header {
 }
 
 .nav_list {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .nav_link:hover,
@@ -76,16 +135,16 @@ header {
 }
 
 .nav_active_link {
-  margin: 1.5vh;
-  font-size: 9.375rem;
+  margin: 2rem;
+  font-size: 8rem;
   -webkit-text-fill-color: maroon;
   -webkit-text-stroke-color: black;
 }
 
 .nav_link {
-  margin: 1.5vh;
+  margin: 2rem;
 
-  font-size: 9.375rem;
+  font-size: 8rem;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 4px;
@@ -188,7 +247,7 @@ footer {
 }
 
 .contact_page_header {
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 .contact_page_information {
