@@ -6,67 +6,13 @@
 * Misc
 ----------------------------------------------  */
 
-
-/* code that is here will apply to any screen size */ 
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-}
+/* code that is here will apply to any screen size */
 
 html {
   height: 100%;
+  font-size: 62.5%;
+
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
 }
 
 body {
@@ -74,9 +20,8 @@ body {
   flex-direction: column;
 
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
 
-  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
   background-color: white;
 }
 
@@ -95,7 +40,6 @@ p {
 header {
   display: flex;
   justify-content: center;
-  background-color: white;
 
   position: sticky;
   top: 0;
@@ -105,8 +49,9 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 
+  background-color: white;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-weight: bold;
 }
@@ -117,12 +62,13 @@ header {
 
 .nav_bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .nav_list {
-  padding: 1rem;
+  text-align: center;
+  padding: 10px;
 }
 
 .nav_link:hover,
@@ -130,24 +76,24 @@ header {
 .nav_active_link {
   -webkit-text-fill-color: maroon;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 1px;
   text-decoration: none;
 }
 
 .nav_active_link {
-  margin: 2rem;
-  font-size: 8rem;
+  margin: 5px;
+  font-size: 30px;
   -webkit-text-fill-color: maroon;
   -webkit-text-stroke-color: black;
 }
 
 .nav_link {
-  margin: 2rem;
+  margin: 5px;
 
-  font-size: 8rem;
+  font-size: 30px;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 1px;
   text-decoration: none;
 }
 
@@ -155,7 +101,6 @@ header {
 .nav_link:visited {
   color: none;
 }
-
 
 /* ----------------------------------------------  */
 /* --------------- Home Page Content ------------  */
@@ -171,7 +116,7 @@ header {
 
 .my_name,
 .my_title {
-  font-weight: bold;
+  font-weight: bold; 
   font-size: 8.75rem;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
@@ -179,7 +124,7 @@ header {
   text-decoration: none;
 }
 
-.content_container{
+.content_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,18 +134,20 @@ header {
   width: 100%;
 }
 
-.portrait_image_container{
+.portrait_image_container {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
 
-.portrait_image{
+.portrait_image {
   border-radius: 50%;
   width: 500px;
 }
 
-.homepage_name_container, .homepage_subtitle_container, .homepage_img_container {
+.homepage_name_container,
+.homepage_subtitle_container,
+.homepage_img_container {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -219,15 +166,16 @@ footer {
   margin-top: auto;
   position: sticky;
   width: 100%;
-  padding: 3rem;
-  height: 1vh;
+  height: 20px;
   bottom: 0;
 
-  font-size: 2.25rem;
+  font-size: 0.75rem;
   font-style: italic;
   background-color: maroon;
   color: white;
 }
+
+
 
 /* ----------------------------------------------  */
 /* ---------------- Contact Page ----------------  */
@@ -278,47 +226,44 @@ footer {
 /* ---------------- Projects Page ---------------  */
 /* ----------------------------------------------  */
 
-
 /* ----------------------------------------------  */
 /* ---------------- Blog Page -------------------  */
 /* ----------------------------------------------  */
-
 
 /* ----------------------------------------------  */
 /* ---------------- Photography Page ------------  */
 /* ----------------------------------------------  */
 
-.photo_container {
+.photo__container {
   display: flex;
   justify-content: space-evenly;
-
 }
 
-.photo_container_left {
+.photo__container--left {
   display: flex;
   flex-direction: column;
 }
 
-.photo_container_right {
+.photo__container--right {
   display: flex;
   flex-direction: column;
 }
 
-.photo {
-  padding: 20px;
+.photo_container--item { 
+  padding: 10px;
+  width: 90%;
+  height: 90%;
 }
 
 /* ----------------------------------------------  */
 /* ---------------- Rouge Boy Page --------------  */
 /* ----------------------------------------------  */
 
-
 .rougeboy_content_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .rougeboy_subtitle_container {
