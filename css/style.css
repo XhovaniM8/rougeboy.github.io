@@ -228,12 +228,15 @@ footer {
 
 .photo__container--left {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   
+  align-items: center;
+  
 }
 
 .photo__container--right {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .photo_container--item { 
