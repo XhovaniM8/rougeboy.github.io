@@ -22,7 +22,6 @@ body {
   min-height: 100%;
   margin: 0 auto;
 
-  padding: 0 3em;
 
   background-color: white;
 }
@@ -231,6 +230,7 @@ footer {
   align-items: center;
 
   margin:0 auto;
+  padding: 0 2em;
 
   max-width: 150rem;
 
