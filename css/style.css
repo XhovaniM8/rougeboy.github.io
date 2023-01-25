@@ -32,12 +32,17 @@ h1 {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+
+  margin: 2px;
+background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 p {
   font-size: 1.5em;
-  font-weight: bold;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 /* ----------------------------------------------  */
@@ -224,23 +229,33 @@ footer {
 /* ---------------- Blog Page -------------------  */
 /* ----------------------------------------------  */
 
+
 .blog__content--text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 
   margin:0 auto;
   padding: 0 2em;
 
-  max-width: 150rem;
+  max-width: 125rem;
+  
 
 }
 
 .todo__list--text{
   font-size: 1.5em;
   font-weight: bold;
-
 }
+
+.blog__header--text {
+  margin:0;
+  padding:0;
+  padding:0;
+}
+
+.blog_content--container {
+  margin:0;}
 
 /* ----------------------------------------------  */
 /* ---------------- Photography Page ------------  */
@@ -249,12 +264,14 @@ footer {
 .photo__container {
   display: flex;
   justify-content: space-evenly;
+  padding: 5px;
 }
 
 .photo__container--left {
   display: flex;
   flex-direction: column;   
-  align-items: center;
+  align-items: center; 
+  gap: 4px;
   
 }
 
@@ -262,12 +279,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4px;
 }
 
 .photo_container--item { 
-  padding: 5px;
-  width: 95%;
+  width: 90%;
   height: 90%;
+  
 }
 
 /* ----------------------------------------------  */
