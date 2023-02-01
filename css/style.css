@@ -11,37 +11,23 @@
 html {
   height: 100%;
   font-size: 62.5%;
-
   font-family: "Eras ITC", "Eras Light ITC", sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
-
   min-height: 100%;
   margin: 0 auto;
-
   background-color: white;
 }
 
-
-h1 {
+h1, h2 {  
+  margin: 2px;
   font-size: 2.75em;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-
-  margin: 2px;
-}
-
-h2 {
-  font-size: 2.75em;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-
-  margin: 2px;
 }
 
 p {
@@ -298,7 +284,6 @@ footer {
   width: 95%;
   height: 90%;
 }
-
 
 /* ----------------------------------------------  */
 /* ---------------- Rouge Boy Page --------------  */
