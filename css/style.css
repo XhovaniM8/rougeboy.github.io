@@ -318,11 +318,11 @@ footer {
 .rougeboy__content__image--container{
   display: flex;
   justify-content: center;
-  
+  padding-bottom: 50px;
 }
 
-.rougeboy_subtitle_container {
-  margin: 10rem;
+.rougeboy__subtitle--container{
+  padding-top: 50px;
 }
 
 .rougeboy__subtitle--text{
