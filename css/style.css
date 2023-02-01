@@ -28,16 +28,23 @@ body {
 
 
 h1 {
-  font-size: 3em;
+  font-size: 2.75em;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 
   margin: 2px;
-background-image: linear-gradient(to left, #553c9a, #b393d3);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+
+}
+
+h2 {
+  font-size: 2.75em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  margin: 2px;
+
 }
 
 p {
@@ -152,6 +159,11 @@ header {
   overflow: hidden;
 }
 
+.homepage__img--container{
+  flex-direction: column;
+  align-items: center;
+}
+
 /* ----------------------------------------------  */
 /* ---------------- Footer Page -----------------  */
 /* ----------------------------------------------  */
@@ -192,16 +204,10 @@ footer {
   -webkit-text-stroke-color: black;
 }
 
-.contact_page_header {
-  font-size: 5rem;
-}
-
 .contact_page_information {
   display: flex;
   justify-content: center;
-
-  font-size: 1.5em;
-
+  font-size: 1em;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
@@ -210,20 +216,29 @@ footer {
 .contact_page_information_container {
   display: flex;
   flex-direction: column;
+  
   align-items: left;
-  padding-left: 1em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .contact_page_name,
 .contact_page_email,
 .contact_page_phone {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: .5rem;
 }
 
 /* ----------------------------------------------  */
 /* ---------------- Projects Page ---------------  */
 /* ----------------------------------------------  */
+
+.project__content--container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+  margin-right: 3em;
+  gap: 5px;
+}
 
 /* ----------------------------------------------  */
 /* ---------------- Blog Page -------------------  */
@@ -264,29 +279,29 @@ footer {
 .photo__container {
   display: flex;
   justify-content: space-evenly;
-  padding: 5px;
+  padding: 2px;
 }
 
 .photo__container--left {
   display: flex;
   flex-direction: column;   
   align-items: center; 
-  gap: 4px;
-  
+  gap: 2px;
+
 }
 
 .photo__container--right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 .photo_container--item { 
-  width: 90%;
+  width: 95%;
   height: 90%;
-  
 }
+
 
 /* ----------------------------------------------  */
 /* ---------------- Rouge Boy Page --------------  */
