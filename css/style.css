@@ -31,6 +31,7 @@ h1, h2 {
 }
 
 p {
+  font-family: "Courier";
   font-size: 1.5em;
   line-height: 30px;
 }
@@ -237,8 +238,6 @@ footer {
   padding: 0 2em;
 
   max-width: 125rem;
-  
-
 }
 
 .todo__list--text{
