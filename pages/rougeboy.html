@@ -12,10 +12,24 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
   </head>
 
-  <body class="rougeboy__body">
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-35JZVSX5DV"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-35JZVSX5DV");
+  </script>
+
+  <body class="rougeboy__body">
     <!-- header and navigation -->
-    <header class = "rougeboy__header"> 
+    <header class="rougeboy__header">
       <nav class="header__nav" id="nav_bar">
         <ul class="header__navlist">
           <li style="display: inline" class="header__item">
@@ -44,22 +58,19 @@
     <!-- Beginning of Content -->
 
     <div class="rougeboy__content--container">
+      <div class="rougeboy__content__image--container">
+        <img
+          class="rougeboy__content__image"
+          src="../images/RED_LOGO2.png"
+          alt="rouge boy. logo"
+          style="max-width: 35em"
+          border-radius:
+          50%;
+        />
+      </div>
 
-        <div class="rougeboy__content__image--container">
-          <img
-            class="rougeboy__content__image"
-            src="../images/RED_LOGO2.png"
-            alt="rouge boy. logo"
-            style="max-width: 35em"
-            border-radius: 50%;
-          />
-        </div>
-
-        <div class="rougeboy__subtitle--text"> Provocateur </div>
-        <div class="rougeboy__subtitle--textblack"> Provocateur </div>
-
-
-
+      <div class="rougeboy__subtitle--text">Provocateur</div>
+      <div class="rougeboy__subtitle--textblack">Provocateur</div>
     </div>
 
     <!-- footer -->
@@ -68,6 +79,5 @@
         Copyright &copy; rougeboy. | Images used are Copyright &copy rougeboy.
       </div>
     </footer>
-
   </body>
 </html>
