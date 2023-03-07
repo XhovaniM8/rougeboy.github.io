@@ -270,7 +270,6 @@ footer {
   flex-direction: column;   
   align-items: center; 
   gap: 2px;
-
 }
 
 .photo__container--right {
@@ -282,7 +281,7 @@ footer {
 
 .photo_container--item { 
   width: 95%;
-  height: 95%;
+  height: 100%;
 }
 
 /* ----------------------------------------------  */
