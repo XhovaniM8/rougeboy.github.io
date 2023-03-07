@@ -256,6 +256,15 @@ footer {
 /* ---------------- Photography Page ------------  */
 /* ----------------------------------------------  */
 
+.photography__services--text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 .photo__container {
   display: flex;
   justify-content: space-evenly;
