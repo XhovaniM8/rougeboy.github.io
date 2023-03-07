@@ -11,7 +11,8 @@ This is my website / portfolio.
 I wrote this website using VSCode. I started the Odin Project where I learned about general front-end development. After learning Flex-Box and how to build a responsive website page, I took to working on my own portfolio page with my own design. I will finish the Odin Project and add Java Script in the near future and continously update the page with content and technology. 
 
 ## Optimizations:
-
+# JPG Optimization
+All of my photos have been compressed to 90% quality to save around 10% of loading time.
 
 ## Lessons Learned:
 
