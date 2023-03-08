@@ -31,7 +31,7 @@ h1, h2 {
 }
 
 p {
-  font-family: "Courier";
+  font-family: "Source Serif Pro",serif;
   font-size: 1.5em;
   line-height: 30px;
 }
@@ -222,9 +222,9 @@ footer {
 .project__content--container{
   display: flex;
   flex-direction: column;
-  margin-left: 3em;
-  margin-right: 3em;
-  gap: 5px;
+  margin-left: 25%;
+  margin-right: 15%;
+  gap: 3px;
 }
 
 /* ----------------------------------------------  */
@@ -278,12 +278,10 @@ footer {
 
 .photography__services--subtext{
   font-size: 2em;
-  display: flex;
-  justify-content: center;
   text-align: center;
 }
 
-.red-text{
+.red--text{
   color: maroon;
 }
 
