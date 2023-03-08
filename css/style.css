@@ -145,6 +145,12 @@ header {
 .homepage__img--container{
   flex-direction: column;
   align-items: center;
+  margin: auto;
+}
+
+.rougeboy__logo--image{
+  height: 300px;
+  width: auto;
 }
 
 /* ----------------------------------------------  */
@@ -285,12 +291,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
 }
 
 .photo__container--item { 
   width: 100%;
-  height: 100%;
+  height: 95%;
+  min-width: 30px;
+  margin-right : auto;
+  margin-left : auto;
 }
 
 /* ----------------------------------------------  */
