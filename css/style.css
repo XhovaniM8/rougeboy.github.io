@@ -281,7 +281,6 @@ footer {
   align-items: center; 
   border: 1px solid black;
 }
-
 .photo__container--right {
   display: flex;
   flex-direction: column;
@@ -289,7 +288,7 @@ footer {
   border: 1px solid black;
 }
 
-.photo_container--item { 
+.photo__container--item { 
   width: 100%;
   height: 100%;
 }
