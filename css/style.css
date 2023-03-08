@@ -263,16 +263,28 @@ footer {
 
 .photography__services--container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 3em;
 }
 
 .photography__services--text{
-  font-size: 3xsem;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.photography__services--subtext{
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.red-text{
+  color: maroon;
 }
 
 .photo__container {
@@ -299,7 +311,9 @@ footer {
   min-width: 30px;
   margin-right : auto;
   margin-left : auto;
+  cursor: pointer;
 }
+
 
 /* ----------------------------------------------  */
 /* ---------------- Rouge Boy Page --------------  */
