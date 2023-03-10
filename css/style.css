@@ -281,7 +281,7 @@ footer {
 .photograpy__services--listitem {
   font-family: "Source Serif Pro",serif;
   font-size: 1.75em;
-  line-height: 15px;
+  line-height: 1.5em;
   -webkit-text-fill-color: maroon;
   -webkit-text-stroke-width: 1px;
 }
@@ -289,7 +289,6 @@ footer {
 .photography__services--subtext{
   font-size: 2em;
   text-align: center;
-
 }
 
 .photo__container {
