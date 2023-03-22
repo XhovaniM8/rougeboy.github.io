@@ -8,12 +8,13 @@ This is my website / portfolio.
 **Tech used:** HTML & CSS
 **Hardware Used** Nikon D3300 55mm Lens (default)
 
-I wrote this website using VSCode. I started the Odin Project where I learned about general front-end development. After learning Flex-Box and how to build a responsive website page, I took to working on my own portfolio page with my own design. I will finish the Odin Project and add Java Script in the near future and continously update the page with content and technology. 
+I used HTML and CSS to create this website, and took inspiration from what I learned in the Odin Project's front-end development course. After getting comfortable with Flex-Box and building responsive web pages, I designed my own portfolio page from scratch using VSCode. I plan to finish the Odin Project, add JavaScript, and continue updating this page with fresh content and new technology.
 
 ## Optimizations:
-### JPG Optimization
-All of my photos have been compressed to 90% quality to save around 10% of loading time.
+To make my site faster and more efficient, I compressed all images to 90% quality, which saves about 10% in loading time. I also implemented Google Analytics to track website traffic.
 
 ## Lessons Learned:
+Through creating this portfolio, I've gained valuable experience in front-end development, including design principles, responsive layouts, and image optimization.
 
 ## To-Do
+In the future, I hope to keep improving this website by incorporating new technologies and updating its content.
