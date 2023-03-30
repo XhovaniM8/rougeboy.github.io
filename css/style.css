@@ -313,7 +313,8 @@ footer {
 .photo__container--item:hover,
 .photo__container--item:active {
   transform: scale(1.3);
-  transform-origin: center center;
+  transform-origin: 70% 60% 70%;
+
 }
 
 img {
