@@ -1,7 +1,7 @@
 # My Portfolio
 This is my website / portfolio. 
 
-**Link to project:** https://xhovanim8.github.io/Portfolio/
+**Link to project:** http://rougeboy.co/
 ![Alt text](/assets/website_screenshot.png "Portfolio Screenshot")
 
 ## How it's made:
