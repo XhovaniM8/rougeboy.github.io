@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-35JZVSX5DV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-35JZVSX5DV');
-</script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-35JZVSX5DV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="UTF-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xhovani's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    gtag('config', 'G-35JZVSX5DV');
+  </script>
 
-  <body class="homepage__body">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xhovani's Portfolio</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- header and navigation -->
-    <header class = "header"> 
-      <nav class="header__nav" id="nav_bar">
-        <ul class="header__navlist">
-          <li style="display: inline" class="header__item">
-            <a href="index.html" class="header__link--active">home</a>
-          </li>
-          <li style="display: inline" class="header__item">
-            <a href="pages/photography.html" class="header__link">photography</a>
-          </li>
-          <li style="display: inline" class="header__item">
-            <a href="pages/rougeboy.html" class="header__link">rougeboy.</a>
-          </li>
-          <li style="display: inline" class="header__item">
-            <a href="pages/contact.html" class="header__link">contact me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body class="homepage__body">
 
-    <!-- content -->
-      <div class="homepage__content">
-        <a href="https://www.linkedin.com/in/xhovanimali/" class="homepage__name--link">
-          xhovani mali</a>
-      </div>
-      <div class="homepage__subtitle--container">
-        <section class="homepage__subtitle">w.i.p</section>
-      </div>
-      <div class="homepage__img--container">
-        <img
-          class="rougeboy__logo--image"
-          src="images/RED_LOGO.png"
-          alt="rouge boy. logo red"
-        />
-      </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="assets/LandingPage.mp4" type="video/mp4">
+  </video>
+
+  <!-- Header and Navigation -->
+  <header class="header">
+    <nav class="header__nav__top" id="nav_bar">
+      <ul class="header__navlist">
+        <li style="display: inline" class="header__item">
+          <a href="index.html" class="header__link--active">home</a>
+        </li>
+        <li style="display: inline" class="header__item">
+          <a href="pages/photography.html" class="header__link">photography</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="header__bottom">
+    <nav class="header__nav__top" id="nav_bar">
+      <ul class="header__navlist__bottom">
+        <li style="display: inline" class="header__item">
+          <a href="../contact.html" class="header__link--active">contact me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="homepage__content">
+    <div class="homepage__img--container">
+      <img class="rougeboy__logo--image" src="assets/rougeboy_logo.png" alt="rouge boy. logo red" />
     </div>
+  </div>
 
-    <!-- footer -->
-    <footer class = "footer">
-      <div class="footer__content--text">
-        Copyright &copy; rougeboy. | Images used are Copyright &copy rougeboy.
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content--text">
+      Copyright &copy; rougeboy. | Images used are Copyright &copy; rougeboy.
+    </div>
+  </footer>
 
+</body>
 
-  </body>
 </html>

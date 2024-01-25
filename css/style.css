@@ -1,17 +1,18 @@
-/* ----------------------------------------------  
-* Display Properties
-* Posistion Properties
-* Box-Model Properties
-* Typography
-* Misc
-----------------------------------------------  */
+/* ----------------------------------------------
+   Display Properties
+   Position Properties
+   Box-Model Properties
+   Typography
+   Misc
+---------------------------------------------- */
 
 /* code that is here will apply to any screen size */
 
 html {
   height: 100%;
   font-size: 62.5%;
-  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  /* Replace existing font family with Urbanist */
 }
 
 body {
@@ -22,7 +23,7 @@ body {
   background-color: white;
 }
 
-h1, h2 {  
+h1, h2 {
   margin: 2px;
   font-size: 2.75em;
   -webkit-text-fill-color: white;
@@ -30,94 +31,96 @@ h1, h2 {
   -webkit-text-stroke-color: black;
 }
 
-p{
-  font-family: "Source Serif Pro",serif;
+p {
+  font-family: "Urbanist", sans-serif;
   font-size: 1.5em;
   line-height: 30px;
 }
 
-/* ----------------------------------------------  */
-/* ---------------- Header Page -----------------  */
-/* ----------------------------------------------  */
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
-header {
+/* ----------------------------------------------
+   Header Page
+---------------------------------------------- */
+
+header, .header__bottom {
   display: flex;
-  justify-content: center;
-
+  justify-content: left;
   position: sticky;
   top: 0;
-
   margin-bottom: auto;
   padding-top: .2em;
-
-  background-color: white;
-  -webkit-text-fill-color: white;
+  font-family: "Urbanist", sans-serif;
+  /* Use Urbanist font */
+  -webkit-text-fill-color: lightgrey;
+  /* Use grey text color */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-weight: bold;
 }
 
-/* ----------------------------------------------  */
-/* ---------------- Nav Bar ---------------------  */
-/* ----------------------------------------------  */
+/* ----------------------------------------------
+   Nav Bar
+---------------------------------------------- */
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-height: 25em;
+.header__navlist, .header__navlist__bottom {
+  text-align: left;
+  /* Align text to the left */
+  padding: 2em;
 }
 
-.header__navlist{
-  text-align: center;
-  padding: 1em;
+.header__navlist__bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2em;
+  width: 100%;
 }
 
-.header__link:hover,
-.header__link:active,
-.header__link--active {
+.header__link:hover, .header__link:active, .header__link--active {
   -webkit-text-fill-color: maroon;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
   text-decoration: none;
 }
 
 .header__link--active {
-  margin: .1em;
-  font-size: 3.6em;
-  -webkit-text-fill-color: maroon;
-  -webkit-text-stroke-color: black;
+  margin: 0.1em;
+  font-size: 2.5em;
 }
 
 .header__link {
-  font-size: 3.5em;
-  margin: .1em;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1.5px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  font-size: 2.5em;
+  margin: 0.1em;
+  -webkit-text-fill-color: lightgrey;
+  /* Use grey text color */
   text-decoration: none;
 }
 
-.header__link:link,
-.header__link:visited {
+.header__link:link, .header__link:visited {
   color: none;
 }
 
-/* ----------------------------------------------  */
-/* --------------- Home Page Content ------------  */
-/* ----------------------------------------------  */
+/* ----------------------------------------------
+   Home Page Content
+---------------------------------------------- */
 
-.homepage__name--link:hover,
-.homepage__name--link:active {
+.homepage__name--link:hover, .homepage__name--link:active {
   -webkit-text-fill-color: maroon;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
   text-decoration: none;
 }
 
-.homepage__name--link,
-.homepage__subtitle {
-  font-weight: bold; 
+.homepage__name--link, .homepage__subtitle {
   font-size: 4em;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
@@ -125,57 +128,45 @@ header {
   text-decoration: none;
 }
 
-.homepage__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.homepage__content,
-.homepage__subtitle--container,
-.homepage__img--container{
+.homepage__content, .homepage__subtitle--container, .homepage__img--container {
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
 
-.homepage__img--container{
+.homepage__img--container {
   flex-direction: column;
   align-items: center;
   margin: auto;
 }
 
-.rougeboy__logo--image{
+.rougeboy__logo--image {
   height: 300px;
   width: auto;
 }
 
-/* ----------------------------------------------  */
-/* ---------------- Footer Page -----------------  */
-/* ----------------------------------------------  */
+/* ----------------------------------------------
+   Footer Page
+---------------------------------------------- */
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
   margin-top: auto;
   position: sticky;
   height: 20px;
   bottom: 0;
-
   font-size: 1rem;
   font-style: italic;
   background-color: maroon;
   color: white;
 }
 
-/* ----------------------------------------------  */
-/* ---------------- Contact Page ----------------  */
-/* ----------------------------------------------  */
+/* ----------------------------------------------
+   Contact Page
+---------------------------------------------- */
 
 .contact_page_container {
   overflow: hidden;
@@ -184,7 +175,6 @@ footer {
 .contact_page_header_container {
   display: flex;
   justify-content: center;
-
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
@@ -202,68 +192,24 @@ footer {
 .contact_page_information_container {
   display: flex;
   flex-direction: column;
-  
   align-items: left;
   margin-left: 3em;
   margin-right: 3em;
 }
 
-.contact_page_name,
-.contact_page_email,
-.contact_page_phone {
+.contact_page_name, .contact_page_email, .contact_page_phone {
   margin-top: .5rem;
 }
 
-/* ----------------------------------------------  */
-/* ---------------- Projects Page ---------------  */
-/* ----------------------------------------------  */
+/* ----------------------------------------------
+   Photography Page
+---------------------------------------------- */
 
-.project__content--container{
-  display: flex;
-  flex-direction: column;
-  margin-left: 25%;
-  margin-right: 15%;
-  gap: 3px;
-}
-
-/* ----------------------------------------------  */
-/* ---------------- Blog Page -------------------  */
-/* ----------------------------------------------  */
-
-.blog__content--text {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-
-  margin:0 auto;
-  padding: 0 2em;
-
-  max-width: 125rem;
-}
-
-.todo__list--text{
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.blog__header--text {
-  margin:0;
-  padding:0;
-  padding:0;
-}
-
-.blog_content--container {
-  margin:0;
-}
-
-/* ----------------------------------------------  */
-/* ---------------- Photography Page ------------  */
-/* ----------------------------------------------  */
-.red--text{
+.red--text {
   color: maroon;
 }
 
-.photography__services--container{
+.photography__services--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +217,7 @@ footer {
   margin-bottom: 2em;
 }
 
-.photography__services--text{
+.photography__services--text {
   font-size: 3em;
   display: flex;
   justify-content: center;
@@ -279,14 +225,14 @@ footer {
 }
 
 .photograpy__services--listitem {
-  font-family: "Source Serif Pro",serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 1.5em;
   line-height: 1.5em;
   -webkit-text-fill-color: maroon;
   -webkit-text-stroke-width: 1px;
 }
 
-.photography__services--subtext{
+.photography__services--subtext {
   font-size: 1.5em;
   text-align: center;
 }
@@ -299,11 +245,11 @@ footer {
 
 .photo__container--left, .photo__container--right {
   display: flex;
-  flex-direction: column;   
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
 }
 
-.photo__container--item { 
+.photo__container--item {
   width: 99%;
   margin: 1%;
   cursor: pointer;
@@ -319,55 +265,4 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  mix-blend-mode: luminosity;
-}
-
-img:hover { 
-  mix-blend-mode: normal;
-
-}
-
-
-/* ----------------------------------------------  */
-/* ---------------- Rouge Boy Page --------------  */
-/* ----------------------------------------------  */
-
-.rougeboy__body, .rougeboy__header {
-  background-color: #470202;
-}
-
-.rougeboy_content_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.rougeboy__content__image--container{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-
-.rougeboy__subtitle--container{
-  padding-top: 50px;
-}
-
-.rougeboy__subtitle--text{
-  display: flex;
-  justify-content: center;
-
-  font-size: 16px;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-color: maroon;
-  -webkit-text-stroke-width: 1.5px;
-}
-
-.rougeboy__subtitle--textblack{
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1.5px;
 }
