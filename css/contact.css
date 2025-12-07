@@ -1,0 +1,115 @@
+/* ==========================================================================
+   CONTACT PAGE STYLES
+   ========================================================================== */
+
+.contact {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+}
+
+.contact__container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.contact__item {
+    padding: var(--space-md);
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.contact__item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact__label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-accent);
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+}
+
+.contact__value {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.contact__link {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.contact__link:hover {
+    color: var(--color-accent);
+}
+
+.contact__social {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.contact__social .contact__link {
+    font-size: 1rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: white;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.contact__social .contact__link:hover {
+    background: var(--color-accent);
+    color: white;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .contact {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .contact__value {
+        font-size: 1rem;
+    }
+
+    .contact__social {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__item {
+        padding: var(--space-sm);
+    }
+
+    .contact__label {
+        font-size: 0.75rem;
+    }
+
+    .contact__value {
+        font-size: 0.95rem;
+    }
+
+    .contact__social .contact__link {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

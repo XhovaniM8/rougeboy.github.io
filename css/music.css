@@ -1,0 +1,197 @@
+/* ==========================================================================
+   MUSIC PAGE STYLES
+   ========================================================================== */
+
+.music-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-md);
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+/* ==========================================================================
+   RELEASES SECTION
+   ========================================================================== */
+
+.releases {
+    margin-bottom: calc(var(--space-xl) * 2);
+}
+
+.track {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-lg);
+    background: var(--color-bg-alt);
+    border-radius: 8px;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.track:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.track__info {
+    margin-bottom: var(--space-md);
+}
+
+.track__title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.track__artists {
+    font-size: 1rem;
+    color: var(--color-accent);
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.track__year {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.track__player {
+    margin: var(--space-md) 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.track__description {
+    margin: var(--space-md) 0;
+}
+
+.track__description p {
+    color: var(--color-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.track__links {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    margin-top: var(--space-md);
+}
+
+.track__link {
+    padding: 0.6rem 1.2rem;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.track__link:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   COLLABORATIONS SECTION
+   ========================================================================== */
+
+.collaborations {
+    padding: var(--space-xl) 0;
+}
+
+.collab-card {
+    background: linear-gradient(135deg, var(--color-primary), #2a2a2a);
+    padding: var(--space-xl);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.collab-card h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: var(--space-md);
+}
+
+.collab-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: var(--space-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collab-artists {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.collab-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .music-container {
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .track {
+        padding: var(--space-md);
+    }
+
+    .track__title {
+        font-size: 1.5rem;
+    }
+
+    .track__links {
+        flex-direction: column;
+    }
+
+    .track__link {
+        text-align: center;
+    }
+
+    .collab-card {
+        padding: var(--space-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .track__title {
+        font-size: 1.3rem;
+    }
+
+    .collab-card h2 {
+        font-size: 1.75rem;
+    }
+}

@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-35JZVSX5DV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-35JZVSX5DV');
-</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ROUGE BOY</title>
 
-    <meta charset="UTF-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
 
-  <body class="contact__body">
-  <!-- Header and Navigation -->
-  <header class="header">
-    <nav class="header__nav__top" id="nav_bar">
-      <ul class="header__navlist">
-        <li style="display: inline" class="header__item">
-          <a href="../index.html" class="header__link--active">home</a>
-        </li>
-        <li style="display: inline" class="header__item">
-          <a href="pages/photography.html" class="header__link">photography</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-  <header class="header__bottom">
-    <nav class="header__nav__top" id="nav_bar">
-      <ul class="header__navlist__bottom">
-        <li style="display: inline" class="header__item">
-          <a href="pages/contact.html" class="header__link--active">contact me</a>
-        </li>
-      </ul>
-    </nav>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__brand">
+      <a href="../index.html">ROUGE BOY</a>
+    </div>
+    <ul class="nav__links">
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="poetry.html">Poetry</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1 class="page-header__title">Contact</h1>
+    <p class="page-header__subtitle">Let's connect</p>
   </header>
 
-    <!-- Beginning of Content -->
-    <div class="contact_page_information">
-      <div class="contact_page_information_container">
-        <h1 class="contact_page_header">CONTACT ME</h1>
-        <h2 class="contact_page_name">name: Xhovani Mali</h2>
-        <h2 class="contact_page_email">e-mail: xhovani03@live.com</h2>
-        <h2 class="contact_page_email">e-mail: rougeboyco@gmail.com</h2>
-        <h2 class="contact_page_phone">phone: +1 (631)-992-0570</h2>
+  <!-- Contact Content -->
+  <main class="contact">
+    <div class="contact__container">
+
+      <div class="contact__info">
+        <div class="contact__item">
+          <h3 class="contact__label">Name</h3>
+          <p class="contact__value">Xhovani Mali</p>
+        </div>
+
+        <div class="contact__item">
+          <h3 class="contact__label">Email</h3>
+          <p class="contact__value">
+            <a href="mailto:rougeboyco@gmail.com" class="contact__link">rougeboyco@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact__item">
+          <h3 class="contact__label">Personal</h3>
+          <p class="contact__value">
+            <a href="mailto:xhovani03@live.com" class="contact__link">xhovani03@live.com</a>
+          </p>
+        </div>
+
+        <div class="contact__item">
+          <h3 class="contact__label">Phone</h3>
+          <p class="contact__value">
+            <a href="tel:+16319920570" class="contact__link">+1 (631) 992-0570</a>
+          </p>
+        </div>
+
+        <div class="contact__item">
+          <h3 class="contact__label">Social</h3>
+          <div class="contact__social">
+            <a href="https://instagram.com/rougeboy" target="_blank" class="contact__link">Instagram</a>
+            <a href="https://soundcloud.com/rougeboy" target="_blank" class="contact__link">SoundCloud</a>
+            <a href="https://open.spotify.com/artist/rougeboy" target="_blank" class="contact__link">Spotify</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <p>&copy; 2025 Rouge Boy. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="contact.html">Contact</a>
+        <a href="https://instagram.com/rougeboy" target="_blank">Instagram</a>
       </div>
     </div>
+  </footer>
+</body>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer__text--text">
-      Copyright &copy; rouge boy l.l.c | Images used are Copyright &copy rouge boy l.l.c
-      </div>
-    </footer>
-  </body>
 </html>

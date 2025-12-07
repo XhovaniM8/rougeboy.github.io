@@ -2,64 +2,73 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-35JZVSX5DV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROUGE BOY - Portfolio</title>
 
-    gtag('config', 'G-35JZVSX5DV');
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xhovani's Portfolio</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="homepage__body">
-
-  <video playsinline autoplay muted loop id="myVideo">
-    <source src="assets/LandingPage.mp4" type="video/mp4">
-  </video>
-
-  <!-- Header and Navigation -->
-  <header class="header">
-    <nav class="header__nav__top" id="nav_bar">
-      <ul class="header__navlist">
-        <li style="display: inline" class="header__item">
-          <a href="index.html" class="header__link--active">wip 2024</a>
-        </li>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <header class="header__bottom">
-    <nav class="header__nav__top" id="nav_bar">
-      <ul class="header__navlist__bottom">
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Content -->
-  <div class="homepage__content">
-    <div class="homepage__img--container">
-      <img class="rougeboy__logo--image" src="assets/rougeboy_logo.png" alt="rouge boy. logo red" />
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__brand">
+      <a href="index.html">ROUGE BOY</a>
     </div>
-  </div>
+    <ul class="nav__links">
+      <li><a href="pages/photography.html">Photography</a></li>
+      <li><a href="pages/poetry.html">Poetry</a></li>
+      <li><a href="pages/music.html">Music</a></li>
+      <li><a href="pages/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 class="hero__title">Visual Stories,<br>Sonic Landscapes,<br>Written Words</h1>
+    <p class="hero__subtitle">Artist & Creator</p>
+    <div class="hero__scroll">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-indicator"></div>
+    </div>
+  </header>
+
+  <!-- Featured Work -->
+  <section class="featured">
+    <div class="featured__grid">
+      <a href="pages/photography.html" class="featured__card">
+        <h2 class="featured__title">Photography</h2>
+        <p class="featured__description">Urban landscapes & portraits</p>
+      </a>
+
+      <a href="pages/poetry.html" class="featured__card">
+        <h2 class="featured__title">Poetry</h2>
+        <p class="featured__description">Words & reflections</p>
+      </a>
+
+      <a href="pages/music.html" class="featured__card">
+        <h2 class="featured__title">Music</h2>
+        <p class="featured__description">Latest releases</p>
+      </a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer__content--text">
-      Copyright &copy; rougeboy. | Images used are Copyright &copy; rougeboy.
+    <div class="footer__content">
+      <p>&copy; 2025 Rouge Boy. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="mailto:rougeboyco@gmail.com">Contact</a>
+        <a href="https://instagram.com/rougeboy" target="_blank">Instagram</a>
+      </div>
     </div>
   </footer>
-
 </body>
 
 </html>
