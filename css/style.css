@@ -8,13 +8,21 @@
    ========================================================================== */
 
 :root {
+
   /* Colors */
-  --color-primary: #1a1a1a;
-  --color-accent: #8b0000;
-  --color-text: #2a2a2a;
-  --color-text-light: #6a6a6a;
-  --color-bg: #ffffff;
-  --color-bg-alt: #fafafa;
+  :root {
+    --color-primary: #111111;
+    /* slightly deeper black */
+    --color-accent: #c20000;
+    /* richer burgundy/red */
+    --color-text: #222222;
+    --color-text-light: #777777;
+    /* a touch lighter */
+    --color-bg: #ffffff;
+    --color-bg-alt: #d9dad2;
+    /* a more characterful grey */
+  }
+
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
