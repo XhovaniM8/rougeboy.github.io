@@ -1,144 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music - ROUGE BOY</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/music.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music — ROUGE BOY.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/framework.css">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav__brand">
-            <a href="../index.html">ROUGE BOY</a>
-        </div>
-        <ul class="nav__links">
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="poetry.html" class="active">Poetry</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
 
-    <!-- Header -->
-    <header class="page-header">
-        <h1 class="page-header__title">Music</h1>
-        <p class="page-header__subtitle">Sonic landscapes & collaborations</p>
-    </header>
+  <nav class="fw-nav">
+    <a class="fw-nav__brand" href="../index.html">ROUGE BOY.</a>
+    <ul class="fw-nav__links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="music.html" class="active">Music</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="clothes.html">Clothes</a></li>
+    </ul>
+  </nav>
 
-    <!-- Music Container -->
-    <main class="music-container">
-        <!-- Latest Releases Section -->
-        <section class="releases">
-            <h2 class="section-title">Latest Releases</h2>
+  <div class="fw-hero">
+    <p class="fw-hero__eyebrow">Sounds</p>
+    <h1 class="fw-hero__title">MUSIC<span>.</span></h1>
+  </div>
 
-            <!-- Track 1 -->
-            <article class="track">
-                <div class="track__info">
-                    <h3 class="track__title">Who's Hot</h3>
-                    <p class="track__artists">rouge boy feat. Trent & Amay</p>
-                    <p class="track__year">2025</p>
-                </div>
+  <div class="fw-content">
+    <p class="fw-section-label">Releases</p>
+    <div class="fw-grid fw-grid--3" style="margin-bottom: 4rem;">
+      <div class="fw-card" style="min-height: 260px;">
+        <span class="fw-card__label">EP · — release date —</span>
+        <span class="fw-card__title">Title</span>
+        <span class="fw-card__sub">— tracks — · — label —</span>
+        <span class="fw-badge">Listen</span>
+      </div>
+      <div class="fw-card" style="min-height: 260px;">
+        <span class="fw-card__label">Single · — release date —</span>
+        <span class="fw-card__title">Title</span>
+        <span class="fw-card__sub">feat. —</span>
+        <span class="fw-badge">Listen</span>
+      </div>
+      <div class="fw-card" style="min-height: 260px;">
+        <span class="fw-card__label">Single · — release date —</span>
+        <span class="fw-card__title">Title</span>
+        <span class="fw-card__sub">feat. —</span>
+        <span class="fw-badge">Listen</span>
+      </div>
+    </div>
 
-                <div class="track__player">
-                    <iframe style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/5NX6BXJsKuSpCsA9UgveDu?utm_source=generator&theme=0"
-                        width="100%" height="152" frameborder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy">
-                    </iframe>
-                </div>
+    <p class="fw-section-label">Stream</p>
+    <div class="fw-grid fw-grid--4">
+      <div class="fw-card" style="min-height: 80px; justify-content: center; align-items: center;">
+        <span class="fw-card__label">Spotify</span>
+      </div>
+      <div class="fw-card" style="min-height: 80px; justify-content: center; align-items: center;">
+        <span class="fw-card__label">Apple Music</span>
+      </div>
+      <div class="fw-card" style="min-height: 80px; justify-content: center; align-items: center;">
+        <span class="fw-card__label">SoundCloud</span>
+      </div>
+      <div class="fw-card" style="min-height: 80px; justify-content: center; align-items: center;">
+        <span class="fw-card__label">YouTube</span>
+      </div>
+    </div>
+  </div>
 
-                <div class="track__description">
-                    <p>A collaborative effort showcasing dynamic flows and production. Features Trent and Amay bringing
-                        their unique styles.</p>
-                </div>
+  <footer class="fw-footer">
+    <span>© 2026 ROUGE BOY.</span>
+    <span>All Rights Reserved.</span>
+  </footer>
 
-                <div class="track__links">
-                    <a href="https://open.spotify.com/track/5NX6BXJsKuSpCsA9UgveDu" target="_blank" class="track__link">
-                        Spotify
-                    </a>
-                    <a href="https://music.apple.com/search?term=rougeboy%20whos%20hot" target="_blank"
-                        class="track__link">
-                        Apple Music
-                    </a>
-                    <a href="https://soundcloud.com/search?q=rougeboy%20whos%20hot" target="_blank" class="track__link">
-                        SoundCloud
-                    </a>
-                </div>
-            </article>
-
-            <!-- Track 2 -->
-            <article class="track">
-                <div class="track__info">
-                    <h3 class="track__title">LUCKI</h3>
-                    <p class="track__artists">rouge boy feat. Trent & Scene</p>
-                    <p class="track__year">2024</p>
-                </div>
-
-                <div class="track__player">
-                    <iframe style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/7v60y5zRHuQy2AoW2x39f9?utm_source=generator&theme=0"
-                        width="100%" height="152" frameborder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy">
-                    </iframe>
-                </div>
-
-                <div class="track__description">
-                    <p>Introspective vibes exploring themes of growth and reflection, with smooth collaboration.</p>
-                </div>
-
-                <div class="track__links">
-                    <a href="https://open.spotify.com/track/7v60y5zRHuQy2AoW2x39f9" target="_blank" class="track__link">
-                        Spotify
-                    </a>
-                    <a href="https://music.apple.com/search?term=rougeboy%20lucki" target="_blank" class="track__link">
-                        Apple Music
-                    </a>
-                    <a href="https://soundcloud.com/search?q=rougeboy%20lucki" target="_blank" class="track__link">
-                        SoundCloud
-                    </a>
-                </div>
-            </article>
-        </section>
-
-        <!-- Collaborations Info -->
-        <section class="collaborations">
-            <div class="collab-card">
-                <h2>Collaborations</h2>
-                <p>Working with talented artists to create something unique. Always open to new creative partnerships.
-                </p>
-                <div class="collab-artists">
-                    <span class="collab-tag">Trent</span>
-                    <span class="collab-tag">Scene</span>
-                    <span class="collab-tag">Amay</span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <p>&copy; 2025 Rouge Boy. All music rights reserved.</p>
-            <div class="footer__links">
-                <a href="mailto:rougeboyco@gmail.com">Contact</a>
-                <a href="https://instagram.com/rougeboy" target="_blank">Instagram</a>
-            </div>
-        </div>
-    </footer>
+  <script src="../app/main.js"></script>
 </body>
-
 </html>

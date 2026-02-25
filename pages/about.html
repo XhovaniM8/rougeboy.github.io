@@ -1,114 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - ROUGE BOY</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — ROUGE BOY.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/framework.css">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav__brand">
-            <a href="../index.html">ROUGE BOY</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <nav class="fw-nav">
+    <a class="fw-nav__brand" href="../index.html">ROUGE BOY.</a>
+    <ul class="fw-nav__links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="writings.html">Writings</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="clothes.html">Clothes</a></li>
+    </ul>
+  </nav>
+
+  <div class="fw-hero">
+    <p class="fw-hero__eyebrow">Rouge Boy</p>
+    <h1 class="fw-hero__title">ABOUT <span>ME.</span></h1>
+  </div>
+
+  <div class="fw-content">
+    <p class="fw-section-label">Bio</p>
+    <div class="fw-grid fw-grid--2" style="margin-bottom: 4rem;">
+      <div class="fw-card" style="min-height: 400px; align-items: center; justify-content: center;">
+        <span class="fw-badge">Photo</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1rem 0;">
+        <div class="fw-card" style="min-height: 80px;">
+          <span class="fw-card__label">Name</span>
+          <span class="fw-card__title" style="font-size: 1rem; font-family: var(--font-body);">— placeholder —</span>
         </div>
-        <ul class="nav__links">
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="poetry.html" class="active">Poetry</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header class="page-header">
-        <h1 class="page-header__title">About</h1>
-        <p class="page-header__subtitle">Artist, creator, observer</p>
-    </header>
-
-    <!-- About Content -->
-    <main class="about-container">
-        <section class="about-content">
-            <div class="about-text">
-                <h2>Who I Am</h2>
-                <p>
-                    rougeboy is the artistic identity of Xhovani Mali, a multidisciplinary creator
-                    working across photography, music, and written word. Based in New York, my work
-                    explores the intersection of urban landscapes, personal narrative, and collaborative
-                    creative expression.
-                </p>
-
-                <h2>What I Do</h2>
-                <div class="disciplines">
-                    <div class="discipline">
-                        <h3>Photography</h3>
-                        <p>Urban landscapes, portraits, and film photography capturing the essence of moments and
-                            places.</p>
-                    </div>
-
-                    <div class="discipline">
-                        <h3>Music</h3>
-                        <p>Collaborative hip-hop production and lyricism, working with artists to create authentic
-                            soundscapes.</p>
-                    </div>
-
-                    <div class="discipline">
-                        <h3>Poetry</h3>
-                        <p>Written reflections exploring themes of identity, urban life, and the human experience.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Section -->
-            <section class="contact-section">
-                <h2>Get in Touch</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <a href="mailto:rougeboyco@gmail.com">rougeboyco@gmail.com</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Personal</span>
-                        <a href="mailto:xhovani03@live.com">xhovani03@live.com</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Phone</span>
-                        <a href="tel:+16319920570">+1 (631) 992-0570</a>
-                    </div>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://instagram.com/rougeboy" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://soundcloud.com/rougeboy" target="_blank" rel="noopener">SoundCloud</a>
-                    <a href="https://open.spotify.com/artist/YOUR_ID" target="_blank" rel="noopener">Spotify</a>
-                </div>
-            </section>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <p>&copy; 2025 Rouge Boy. All rights reserved.</p>
-            <div class="footer__links">
-                <a href="mailto:rougeboyco@gmail.com">Contact</a>
-                <a href="https://instagram.com/rougeboy" target="_blank">Instagram</a>
-            </div>
+        <div class="fw-card" style="flex: 1; min-height: 200px;">
+          <span class="fw-card__label">Biography</span>
+          <span class="fw-card__sub">Bio text goes here.</span>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <p class="fw-section-label">Connect</p>
+    <div class="fw-grid fw-grid--3">
+      <div class="fw-card">
+        <span class="fw-card__label">Instagram</span>
+        <span class="fw-card__title">@rougeboy</span>
+      </div>
+      <div class="fw-card">
+        <span class="fw-card__label">Email</span>
+        <span class="fw-card__title" style="font-size: 0.9rem; font-family: var(--font-body);">rougeboyco@gmail.com</span>
+      </div>
+      <div class="fw-card">
+        <span class="fw-card__label">Location</span>
+        <span class="fw-card__title">New York</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fw-footer">
+    <span>© 2026 ROUGE BOY.</span>
+    <span>All Rights Reserved.</span>
+  </footer>
+
+  <script src="../app/main.js"></script>
 </body>
-
 </html>
